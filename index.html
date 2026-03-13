@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hallucination Fixer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="aurora" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo-dot"></span>
+        <div>
+          <p>Hallucination Fixer</p>
+          <span>Audit and correct chatbot answers</span>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="ghost" id="loadSample">Load sample</button>
+        <button class="primary" id="runAudit">Run audit</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-reveal>
+        <div class="hero-copy">
+          <p class="eyebrow">AI quality control suite</p>
+          <h1>Catch hallucinations in seconds.</h1>
+          <p class="lead">
+            Paste any chatbot response, and Hallucination Fixer highlights weak claims, names what is
+            incorrect, and drafts a corrected response. Then re-run to refine until it is crisp.
+          </p>
+          <div class="hero-meta">
+            <div>
+              <strong>3-step audit</strong>
+              <span>Detect, correct, verify</span>
+            </div>
+            <div>
+              <strong>Instant feedback</strong>
+              <span>Clear issues + fixes</span>
+            </div>
+            <div>
+              <strong>Re-run ready</strong>
+              <span>One click improvement</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card" data-reveal>
+          <div class="hero-card-header">
+            <div>
+              <p>Audit Queue</p>
+              <h2>Session 18</h2>
+            </div>
+            <span class="status">Active</span>
+          </div>
+          <div class="hero-card-body">
+            <div>
+              <strong>12</strong>
+              <span>Responses checked</span>
+            </div>
+            <div>
+              <strong>5</strong>
+              <span>Issues flagged</span>
+            </div>
+            <div>
+              <strong>92%</strong>
+              <span>Reliability score</span>
+            </div>
+          </div>
+          <div class="hero-card-footer">
+            <button class="secondary" id="rerunQuick">Re-run last audit</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace" data-reveal>
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Input: chatbot response</h3>
+            <div class="chip">Paste or upload</div>
+          </div>
+          <textarea id="inputText" placeholder="Paste the AI response here..."></textarea>
+          <div class="panel-actions">
+            <button class="ghost" id="clearInput">Clear</button>
+            <button class="primary" id="runAuditInline">Analyze response</button>
+          </div>
+        </div>
+
+        <div class="panel" data-reveal>
+          <div class="panel-header">
+            <h3>Audit results</h3>
+            <div class="chip chip-accent" id="scoreChip">Score: --</div>
+          </div>
+          <div class="results">
+            <div class="result-section">
+              <h4>Hallucination Analysis</h4>
+              <ul id="issuesList"></ul>
+            </div>
+            <div class="result-section">
+              <h4>Corrected Response</h4>
+              <div class="corrected" id="correctedText">Run an audit to generate a fixed response.</div>
+            </div>
+            <div class="result-section">
+              <h4>Recommendations</h4>
+              <div class="recommendations" id="recommendations"></div>
+            </div>
+          </div>
+          <div class="panel-actions">
+            <button class="ghost" id="copyOutput">Copy fixed response</button>
+            <button class="primary" id="rerunFix">Re-run with corrections</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps" data-reveal>
+        <article>
+          <h3>1. Detect</h3>
+          <p>We parse each claim, flag contradictions, unsupported facts, and high-risk assertions.</p>
+        </article>
+        <article>
+          <h3>2. Correct</h3>
+          <p>We rewrite the response, removing errors and replacing them with precise, grounded statements.</p>
+        </article>
+        <article>
+          <h3>3. Verify</h3>
+          <p>We double-check the output and score reliability before you ship it.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built for teams shipping AI experiences with confidence.</p>
+      <button class="ghost">Schedule a walkthrough</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
