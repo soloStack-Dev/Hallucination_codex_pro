@@ -13,7 +13,7 @@ This how codex take a user task with in action to build the app i share the outl
 
 The is the output of codex can builded the app
 
-![codex app](https://i.ibb.co/W46XvC7x/Screenshot-2026-03-14-002430.png)
+![codex app](https://i.ibb.co/HLdxTP7c/Screenshot-2026-03-14-004136.png)
 
 
 ![codex app](https://i.ibb.co/45RGqp3/Screenshot-2026-03-14-002456.png)
