@@ -12,7 +12,8 @@ This how codex take a user task with in action to build the app i share the outl
 ![prompt in action](https://i.ibb.co/MyzxCbNL/Screenshot-2026-03-14-002401.png)
 
 The is the output of codex can builded the app
+
 ![codex app](https://i.ibb.co/W46XvC7x/Screenshot-2026-03-14-002430.png)
-and this also
+
 
 ![codex app](https://i.ibb.co/45RGqp3/Screenshot-2026-03-14-002456.png)
