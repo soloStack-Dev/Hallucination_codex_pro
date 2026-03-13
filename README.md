@@ -11,6 +11,10 @@ I use Codex with gpt 5.2 codex model to build the app but Open ai launched gpt 5
 This how codex take a user task with in action to build the app i share the outlook
 ![prompt in action](https://i.ibb.co/MyzxCbNL/Screenshot-2026-03-14-002401.png)
 
+
+
+
+
 The is the output of codex can builded the app
 
 ![codex app](https://i.ibb.co/HLdxTP7c/Screenshot-2026-03-14-004136.png)
